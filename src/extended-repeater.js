@@ -1,10 +1,9 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function repeater( str, options) {
-  throw new CustomError('Not implemented');
-  // remove line with error and write your code here
+
   let resArr = [];
-  let {repeatTimes = 1, separator = '+', addition = '', additionRepeatTimes = 0, additionSeparator = '|' } = options;
+  let {repeatTimes = 1, separator = '+', addition = '', additionRepeatTimes = 1, additionSeparator = '|' } = options;
   
   if (typeof(str) !== 'string') {
     str += '';
@@ -26,3 +25,6 @@ module.exports = function repeater( str, options) {
   
       return resArr.join('')
   };
+
+
+  //npm run test test\dream-team.test.js
