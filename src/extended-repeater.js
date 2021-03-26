@@ -26,5 +26,4 @@ module.exports = function repeater( str, options) {
       return resArr.join('')
   };
 
-
-  //npm run test test\dream-team.test.js
+  
